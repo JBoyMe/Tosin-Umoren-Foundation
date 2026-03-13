@@ -1,0 +1,16 @@
+.root:global(.__wab_instance) {
+  object-fit: cover;
+  position: relative;
+  color: var(--token-A03OI-tlMsdg);
+  font-family: var(--token-_x6mf1J-DDP5);
+  font-size: var(--token-OiqiIv_iQTPv);
+  line-height: var(--token-L6hlV5z32RlH);
+}
+.freeBox {
+  display: flex;
+  flex-direction: row;
+  padding: var(--token-LkVdj0rGS91q) var(--token-0Z5QDSwD9HEk);
+}
+.slotTargetHeader {
+  font-weight: 600;
+}

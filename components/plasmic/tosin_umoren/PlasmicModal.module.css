@@ -1,0 +1,97 @@
+.ariaDialogTrigger:global(.__wab_instance) {
+  position: relative;
+}
+.svg__wcClo {
+  position: relative;
+  height: 1em;
+}
+.svg___5Jc1X {
+  position: relative;
+  height: 1em;
+}
+.ariaModal:global(.__wab_instance) {
+  background: var(--token-mqURCmGVeID9);
+  display: block;
+  color: var(--token-A03OI-tlMsdg);
+  font-family: var(--token-_x6mf1J-DDP5);
+  font-size: var(--token-OiqiIv_iQTPv);
+  line-height: var(--token-L6hlV5z32RlH);
+  outline-style: none;
+  box-shadow: 0px 24px 48px -12px #00000040;
+  border-radius: var(--token-PxpT5EqgvfGx);
+}
+.pcls_eQr_LmYiS-5R {
+  background: var(--token-2E3Y5o2yNSz-);
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  outline: none;
+}
+.ariaDialog:global(.__wab_instance) {
+  max-width: 90vw;
+  object-fit: cover;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  outline-style: none;
+}
+.h3___8PVc {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-weight: 700;
+  font-size: var(--token-05Vx9Ek24Vfz);
+  min-width: 0;
+  padding: var(--token-MjUw7cxa8TAv);
+}
+.scrollableContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: auto;
+  padding-left: var(--token-MjUw7cxa8TAv);
+  padding-right: var(--token-MjUw7cxa8TAv);
+}
+.freeBox___3PP6L {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: var(--token-516McppZZqwi);
+}
+.text__lRoSr {
+  position: relative;
+}
+.freeBox__odCm4 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-width: 0;
+  padding: var(--token-MjUw7cxa8TAv);
+}
+.svg__tcnb9 {
+  position: relative;
+  height: 1em;
+}
+.text__xQOmB {
+  padding-left: 0px;
+}
+.svg__f68LO {
+  position: relative;
+  height: 1em;
+}
