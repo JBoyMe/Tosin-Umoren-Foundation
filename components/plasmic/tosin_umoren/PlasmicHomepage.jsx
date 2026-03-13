@@ -864,7 +864,7 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.whatWeDo)}
               data-gsap={"true"}
               data-gsap-props={
-                '{\n\n"scrollTrigger": {\n\n"trigger": ".mid-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".mid-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
               }
               data-gsap-type={"from"}
             >
@@ -923,7 +923,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__a5SwJ)}
                     data-gsap={"true"}
-                    data-gsap-props={``}
+                    data-gsap-props={
+                      '{\n\n"scrollTrigger": {\n\n"trigger": ".object-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"scale": 1.5,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                    }
                     data-gsap-type={"from"}
                   >
                     <div
