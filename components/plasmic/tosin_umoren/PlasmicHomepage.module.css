@@ -630,7 +630,7 @@
   row-gap: 24px;
   min-width: 0;
   padding: 8px;
-  margin: 0px 0px 24px 48px;
+  margin: 0px 0px 24px;
 }
 @media (max-width: 1023px) {
   .innerContents {
@@ -974,10 +974,11 @@
 .whatWeDo2 {
   display: grid;
   position: relative;
-  align-content: flex-start;
-  justify-items: stretch;
+  align-content: center;
+  justify-items: center;
   width: 100%;
   background: #000000;
+  height: 1000px;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   grid-template-columns:
@@ -987,7 +988,7 @@
       calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
     )
     minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
-  padding: 120px 64px 64px;
+  padding: 64px;
   margin: 0px;
 }
 .whatWeDo2 > * {
