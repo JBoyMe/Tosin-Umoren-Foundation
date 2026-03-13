@@ -33,17 +33,21 @@ export default function PlasmicLoaderPage(props) {
 
 export const getStaticProps = async (context) => {
   const { catchall } = context.params ?? {};
-  
+
   // Don't handle root path - let pages/index.jsx handle it
   if (!catchall || catchall.length === 0) {
     return { notFound: true };
   }
-  
-  const plasmicPath = typeof catchall === 'string' ? catchall : Array.isArray(catchall) ? `/${catchall.join('/')}` : '/';
+
+  const plasmicPath =
+    typeof catchall === "string"
+      ? `/${catchall}`
+      : Array.isArray(catchall)
+        ? `/${catchall.join("/")}`
+        : "/";
   const plasmicData = await PLASMIC.maybeFetchComponentData(plasmicPath);
   if (!plasmicData) {
-    // non-Plasmic catch-all
-    return { props: {} };
+    return { notFound: true };
   }
   const pageMeta = plasmicData.entryCompMetas[0];
   // Cache the necessary data fetched for the page
@@ -61,15 +65,10 @@ export const getStaticProps = async (context) => {
 }
 
 export const getStaticPaths = async () => {
-  const pageModules = await PLASMIC.fetchPages();
   return {
-    paths: pageModules
-      .filter(mod => mod.path !== '/') // Exclude root path
-      .map((mod) => ({
-        params: {
-          catchall: mod.path.substring(1).split("/"),
-        },
-      })),
+    // Let explicit files in /pages own known static routes, and generate
+    // future Plasmic-only routes on demand.
+    paths: [],
     fallback: "blocking",
   };
 }
