@@ -33,7 +33,7 @@
   max-width: 100%;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
-  padding: -39px 64px 8px;
+  padding: 0px 64px;
 }
 @media (max-width: 1023px) {
   .nav {
