@@ -896,6 +896,11 @@ function PlasmicHomepage__RenderFunc(props) {
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__a5SwJ)}
+                    data-anim={"true"}
+                    data-anim-props={
+                      '{\n\n"scrollTrigger": {\n\n"trigger": ".object-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                    }
+                    data-anim-type={"from"}
                   >
                     <div
                       className={classNames(projectcss.all, sty.freeBox__yei3F)}
@@ -1124,7 +1129,11 @@ function PlasmicHomepage__RenderFunc(props) {
           <section
             data-plasmic-name={"pageWrapper2"}
             data-plasmic-override={overrides.pageWrapper2}
-            className={classNames(projectcss.all, sty.pageWrapper2)}
+            className={classNames(
+              projectcss.all,
+              sty.pageWrapper2,
+              "after-scroll"
+            )}
           >
             <div
               data-plasmic-name={"aboutUs2"}
@@ -1135,6 +1144,11 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-name={"contentsAbout3"}
                 data-plasmic-override={overrides.contentsAbout3}
                 className={classNames(projectcss.all, sty.contentsAbout3)}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n"scrollTrigger": {\n\n"trigger": ".after-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"x": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__fs4SY)}>
                   <div
