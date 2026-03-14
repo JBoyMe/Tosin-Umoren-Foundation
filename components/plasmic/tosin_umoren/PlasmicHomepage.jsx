@@ -172,7 +172,7 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.embedHtml}
             className={classNames("__wab_instance", sty.embedHtml)}
             code={
-              '<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MorphSVGPlugin.min.js"></script>\r\n\r\n <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/DrawSVGPlugin.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathPlugin.min.js">\r\n</script>\r\n\r\n <!-- Three.js + GLTFLoader (Global versions used for simple testing) -->\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js" type="module"></script>\r\n    \r\n    <!-- We need to expose GLTFLoader to window for our script to pick it up if not bundled -->\r\n    <script type="module">\r\n        import { GLTFLoader } from \'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js\';\r\n        window.GLTFLoader = GLTFLoader;\r\n    </script>\r\n\r\n\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/animotion-saply-plus@latest/dist/animotion-saply.min.js"></script>'
+              '<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MorphSVGPlugin.min.js"></script>\r\n\r\n <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/DrawSVGPlugin.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathPlugin.min.js">\r\n</script>\r\n\r\n <!-- Three.js + GLTFLoader (Global versions used for simple testing) -->\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js" type="module"></script>\r\n    \r\n    <!-- We need to expose GLTFLoader to window for our script to pick it up if not bundled -->\r\n    <script type="module">\r\n        import { GLTFLoader } from \'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js\';\r\n        window.GLTFLoader = GLTFLoader;\r\n    </script>\r\n\r\n\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/animotion-saply-plus@5.0.8/dist/animotion-saply.min.js"></script>'
             }
           />
 
@@ -180,19 +180,11 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-name={"nav"}
             data-plasmic-override={overrides.nav}
             className={classNames(projectcss.all, sty.nav)}
-            data-gsap={"true"}
-            data-gsap-props={`{
-
-           "from": {"autoAlpha":0, "scale": 0.6,
-"x": 100},
-
-           "to": {"autoAlpha":1, "scale":1,
-"x": 0},
-
-           "duration": 0.8
-
-         }`}
-            data-gsap-type={"fromTo"}
+            data-anim={"true"}
+            data-anim-props={
+              '{\n\n           "from": {"autoAlpha":0, "scale": 0.6,\n"x": 100},\n\n           "to": {"autoAlpha":1, "scale":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+            }
+            data-anim-type={"fromTo"}
           >
             <NavigationBar
               data-plasmic-name={"navBar"}
@@ -382,19 +374,11 @@ function PlasmicHomepage__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.heroHeading
                 )}
-                data-gsap={"true"}
-                data-gsap-props={`{
-
-           "from": {"autoAlpha":0,
-"x": 100},
-
-           "to": {"autoAlpha":1,
-"x": 0},
-
-           "duration": 0.8
-
-         }`}
-                data-gsap-type={"fromTo"}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n           "from": {"autoAlpha":0,\n"x": 100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+                }
+                data-anim-type={"fromTo"}
               >
                 {"Love, care & support for the young and old."}
               </h1>
@@ -404,19 +388,11 @@ function PlasmicHomepage__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.text__s3L3Q
                 )}
-                data-gsap={"true"}
-                data-gsap-props={`{
-
-           "from": {"autoAlpha":0,
-"scale": 0.5},
-
-           "to": {"autoAlpha":1,
-"scale": 1},
-
-           "duration": 0.8
-
-         }`}
-                data-gsap-type={"fromTo"}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n           "from": {"autoAlpha":0,\n"scale": 0.5},\n\n           "to": {"autoAlpha":1,\n"scale": 1},\n\n           "duration": 0.8\n\n         }'
+                }
+                data-anim-type={"fromTo"}
               >
                 {
                   "We offer educational support, skills empowerment programs, community outreach initiatives, mentorship, and humanitarian assistance designed to uplift, inspire, and create lasting impact."
@@ -489,11 +465,11 @@ function PlasmicHomepage__RenderFunc(props) {
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__qzGLw)}
-                data-gsap={"true"}
-                data-gsap-props={
+                data-anim={"true"}
+                data-anim-props={
                   '{\n\n           "from": {"autoAlpha":0,\n"scale": 0.5},\n\n           "to": {"autoAlpha":1,\n"scale": 1},\n\n           "duration": 0.8\n\n         }'
                 }
-                data-gsap-type={"fromTo"}
+                data-anim-type={"fromTo"}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
@@ -523,11 +499,11 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-name={"aboutUs"}
               data-plasmic-override={overrides.aboutUs}
               className={classNames(projectcss.all, sty.aboutUs)}
-              data-gsap={"true"}
-              data-gsap-props={
+              data-anim={"true"}
+              data-anim-props={
                 '{\n\n"scrollTrigger": {\n\n"trigger": ".intro-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
               }
-              data-gsap-type={"from"}
+              data-anim-type={"from"}
             >
               <div
                 data-plasmic-name={"contentsAbout"}
@@ -646,11 +622,11 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-name={"innerWrapper2"}
               data-plasmic-override={overrides.innerWrapper2}
               className={classNames(projectcss.all, sty.innerWrapper2)}
-              data-gsap={"true"}
-              data-gsap-props={
+              data-anim={"true"}
+              data-anim-props={
                 '\n{"xPercent": -80,\n"yoyo": true,\n"duration": 15,\n"repeat": -1,\n"ease": "none"\n\n}'
               }
-              data-gsap-type={"to"}
+              data-anim-type={"to"}
             >
               <PlasmicImg__
                 alt={""}
