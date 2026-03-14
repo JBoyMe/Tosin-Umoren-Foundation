@@ -181,9 +181,7 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.nav}
             className={classNames(projectcss.all, sty.nav)}
             data-anim={"true"}
-            data-anim-props={
-              '{\n\n           "from": {"autoAlpha":0, "scale": 0.6,\n"x": 100},\n\n           "to": {"autoAlpha":1, "scale":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
-            }
+            data-anim-props={``}
             data-anim-type={"fromTo"}
           >
             <NavigationBar
@@ -838,6 +836,11 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-name={"whatWeDo"}
               data-plasmic-override={overrides.whatWeDo}
               className={classNames(projectcss.all, sty.whatWeDo)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".mid-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
             >
               <div
                 data-plasmic-name={"contentsAbout2"}
