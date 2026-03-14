@@ -649,14 +649,21 @@ function PlasmicDonation__RenderFunc(props) {
           <div
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
-            className={classNames(projectcss.all, sty.footer)}
+            className={classNames(projectcss.all, sty.footer, "F-scroll")}
           >
-            <div className={classNames(projectcss.all, sty.columns__xiOp7)}>
-              <div className={classNames(projectcss.all, sty.column__iyrOu)}>
-                <div className={classNames(projectcss.all, sty.freeBox__dI10D)}>
+            <div
+              className={classNames(projectcss.all, sty.columns__yb9Mp)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
+            >
+              <div className={classNames(projectcss.all, sty.column__iZnqE)}>
+                <div className={classNames(projectcss.all, sty.freeBox__egcwY)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img___0GGKd)}
+                    className={classNames(sty.img__xh65X)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -673,25 +680,25 @@ function PlasmicDonation__RenderFunc(props) {
                   />
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column___0DgG)}>
+              <div className={classNames(projectcss.all, sty.column__hRaor)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1___2Lvkg
+                    sty.h1__ooz1N
                   )}
                 >
                   {"Contact Us"}
                 </h1>
                 <div
-                  className={classNames(projectcss.all, sty.freeBox___19Aus)}
+                  className={classNames(projectcss.all, sty.freeBox___8Rz3S)}
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___496A6
+                      sty.text__gNyo9
                     )}
                   >
                     {"EMAIL US:"}
@@ -701,7 +708,7 @@ function PlasmicDonation__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__o6RGj
+                      sty.link___0PbGa
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -710,12 +717,12 @@ function PlasmicDonation__RenderFunc(props) {
                     {"tosinumorenfoundation@gmail.com\r"}
                   </PlasmicLink__>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__mfy6L)}>
+                <div className={classNames(projectcss.all, sty.freeBox__tpSo1)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__yKd6G
+                      sty.text__f10Wk
                     )}
                   >
                     {"PHONE:"}
@@ -724,18 +731,18 @@ function PlasmicDonation__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__akPt3
+                      sty.text__fCkXc
                     )}
                   >
                     {"+234 813 072 2129, +1760 829 0816"}
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__mWkx)}>
+                <div className={classNames(projectcss.all, sty.freeBox__urVnh)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__wedif
+                      sty.text__nsoXb
                     )}
                   >
                     {"LOCATION:"}
@@ -744,30 +751,30 @@ function PlasmicDonation__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__raIxI
+                      sty.text__tiJ0X
                     )}
                   >
                     {"Nigeria (Outreaches across Lagos, Oyo, Osun & Ekiti)"}
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__t7Ksz)}>
+                <div className={classNames(projectcss.all, sty.freeBox__gw6Rh)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__h6AqU
+                      sty.text__sjVsm
                     )}
                   >
                     {"SOCIALS:"}
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__w4Pwd)}
+                    className={classNames(projectcss.all, sty.freeBox__wuGnn)}
                   >
                     <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__cvGax
+                        sty.link__lasze
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -775,7 +782,7 @@ function PlasmicDonation__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img___1LE3)}
+                        className={classNames(sty.img__h4OAg)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -799,7 +806,7 @@ function PlasmicDonation__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__wjXqu
+                        sty.link__hBtEu
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -807,7 +814,7 @@ function PlasmicDonation__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__f5Yqh)}
+                        className={classNames(sty.img__r9D5D)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -831,7 +838,7 @@ function PlasmicDonation__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__f8XH0
+                        sty.link__y8Ep1
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -839,7 +846,7 @@ function PlasmicDonation__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__raeY)}
+                        className={classNames(sty.img__ylm5A)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -862,23 +869,24 @@ function PlasmicDonation__RenderFunc(props) {
                   </div>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__ftWDl)}>
-                <div className={classNames(projectcss.all, sty.freeBox__nStK)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ds6Xy
-                    )}
-                  >
-                    {"MORE LINKS:"}
-                  </div>
+              <div className={classNames(projectcss.all, sty.column__icYuP)}>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__ydQqG
+                  )}
+                >
+                  {"Links"}
+                </h1>
+                <div className={classNames(projectcss.all, sty.freeBox__nhz6T)}>
                   <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__buBtc
+                      sty.link__zvUuv
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -891,7 +899,7 @@ function PlasmicDonation__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__gmZbH
+                      sty.link__wmI7Z
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -904,7 +912,7 @@ function PlasmicDonation__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__cYf9J
+                      sty.link___9HhJ
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -917,7 +925,7 @@ function PlasmicDonation__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__rpsTa
+                      sty.link__boaQh
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -930,7 +938,7 @@ function PlasmicDonation__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__oZ2XA
+                      sty.link__aIoXv
                     )}
                     component={Link}
                     href={`/gallery`}
@@ -941,13 +949,13 @@ function PlasmicDonation__RenderFunc(props) {
                   </PlasmicLink__>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__syLc0)}>
+              <div className={classNames(projectcss.all, sty.column__bEvLg)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__hhImV
+                    sty.h1__c33Q6
                   )}
                 >
                   {"Subscribe to get latest updates"}
@@ -1021,7 +1029,7 @@ function PlasmicDonation__RenderFunc(props) {
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__jz9TY
+                              sty.text__f9QOa
                             )}
                           >
                             {"Your Email"}
@@ -1081,7 +1089,7 @@ function PlasmicDonation__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text___4EpDd
+                            sty.text__ciLe8
                           )}
                         >
                           {"Subscribe"}

@@ -482,14 +482,21 @@ function PlasmicGallery__RenderFunc(props) {
           <div
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
-            className={classNames(projectcss.all, sty.footer)}
+            className={classNames(projectcss.all, sty.footer, "F-scroll")}
           >
-            <div className={classNames(projectcss.all, sty.columns__lk0Dc)}>
-              <div className={classNames(projectcss.all, sty.column___1SfCi)}>
-                <div className={classNames(projectcss.all, sty.freeBox__trcoI)}>
+            <div
+              className={classNames(projectcss.all, sty.columns__xuXx7)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
+            >
+              <div className={classNames(projectcss.all, sty.column__fdUfV)}>
+                <div className={classNames(projectcss.all, sty.freeBox__oI7Ka)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img___9JjJv)}
+                    className={classNames(sty.img__xqvYm)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -506,23 +513,23 @@ function PlasmicGallery__RenderFunc(props) {
                   />
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column___88Kos)}>
+              <div className={classNames(projectcss.all, sty.column___0L5Gp)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__eLbzc
+                    sty.h1__dCt9V
                   )}
                 >
                   {"Contact Us"}
                 </h1>
-                <div className={classNames(projectcss.all, sty.freeBox__lsAh)}>
+                <div className={classNames(projectcss.all, sty.freeBox__hi27E)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__qbK5I
+                      sty.text___5N1Iv
                     )}
                   >
                     {"EMAIL US:"}
@@ -532,7 +539,7 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__ntsMv
+                      sty.link__zXWol
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -541,12 +548,12 @@ function PlasmicGallery__RenderFunc(props) {
                     {"tosinumorenfoundation@gmail.com\r"}
                   </PlasmicLink__>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__rjCk)}>
+                <div className={classNames(projectcss.all, sty.freeBox___8Oga)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__jBOh
+                      sty.text__c77Pv
                     )}
                   >
                     {"PHONE:"}
@@ -555,18 +562,18 @@ function PlasmicGallery__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__x6LMa
+                      sty.text___0MguA
                     )}
                   >
                     {"+234 813 072 2129, +1760 829 0816"}
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__mKnwS)}>
+                <div className={classNames(projectcss.all, sty.freeBox__t7Vwc)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__r0PPd
+                      sty.text__pnf8A
                     )}
                   >
                     {"LOCATION:"}
@@ -575,30 +582,30 @@ function PlasmicGallery__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___915Z
+                      sty.text__qAik
                     )}
                   >
                     {"Nigeria (Outreaches across Lagos, Oyo, Osun & Ekiti)"}
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__js8Ec)}>
+                <div className={classNames(projectcss.all, sty.freeBox__z0VWd)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__zLwG
+                      sty.text__kzaLs
                     )}
                   >
                     {"SOCIALS:"}
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__bZhBq)}
+                    className={classNames(projectcss.all, sty.freeBox__mgVxi)}
                   >
                     <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__v52IO
+                        sty.link___8Nanq
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -606,7 +613,7 @@ function PlasmicGallery__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img___9Q5YX)}
+                        className={classNames(sty.img___7WQpc)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -630,7 +637,7 @@ function PlasmicGallery__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__sbwgn
+                        sty.link__nT7D8
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -638,7 +645,7 @@ function PlasmicGallery__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img___9IYR)}
+                        className={classNames(sty.img__q6Ou4)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -662,7 +669,7 @@ function PlasmicGallery__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__g7Au9
+                        sty.link__qvMxD
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -670,7 +677,7 @@ function PlasmicGallery__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__hn8N8)}
+                        className={classNames(sty.img__n9TcK)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -693,23 +700,26 @@ function PlasmicGallery__RenderFunc(props) {
                   </div>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__dmfAd)}>
-                <div className={classNames(projectcss.all, sty.freeBox__lgGgU)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___66TWv
-                    )}
-                  >
-                    {"MORE LINKS:"}
-                  </div>
+              <div className={classNames(projectcss.all, sty.column__vvT4Y)}>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__sNvs6
+                  )}
+                >
+                  {"Links"}
+                </h1>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___8L3Ig)}
+                >
                   <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__aZvhJ
+                      sty.link__htC1F
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -722,7 +732,7 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link___2KLi
+                      sty.link__fsv4Q
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -735,7 +745,7 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__lmk9O
+                      sty.link___5PSAm
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -748,7 +758,7 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__jzVqb
+                      sty.link__doDw
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -761,7 +771,7 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__aCulM
+                      sty.link__dsSse
                     )}
                     component={Link}
                     href={`/gallery`}
@@ -772,13 +782,13 @@ function PlasmicGallery__RenderFunc(props) {
                   </PlasmicLink__>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__n0Mqt)}>
+              <div className={classNames(projectcss.all, sty.column__sr6AS)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__dWbo
+                    sty.h1__c3Ci
                   )}
                 >
                   {"Subscribe to get latest updates"}
@@ -852,7 +862,7 @@ function PlasmicGallery__RenderFunc(props) {
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__f0W0Z
+                              sty.text___48Rpx
                             )}
                           >
                             {"Your Email"}
@@ -912,7 +922,7 @@ function PlasmicGallery__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text___3K85V
+                            sty.text__h9WFg
                           )}
                         >
                           {"Subscribe"}

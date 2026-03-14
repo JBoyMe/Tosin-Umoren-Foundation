@@ -882,14 +882,21 @@ function PlasmicContactUs__RenderFunc(props) {
           <div
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
-            className={classNames(projectcss.all, sty.footer)}
+            className={classNames(projectcss.all, sty.footer, "F-scroll")}
           >
-            <div className={classNames(projectcss.all, sty.columns__bRy25)}>
-              <div className={classNames(projectcss.all, sty.column___0SfYc)}>
-                <div className={classNames(projectcss.all, sty.freeBox__wf6Ky)}>
+            <div
+              className={classNames(projectcss.all, sty.columns__wzL)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
+            >
+              <div className={classNames(projectcss.all, sty.column__areXr)}>
+                <div className={classNames(projectcss.all, sty.freeBox__nmBr)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__hrv6A)}
+                    className={classNames(sty.img__j3Lt9)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -906,23 +913,23 @@ function PlasmicContactUs__RenderFunc(props) {
                   />
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__qnwm0)}>
+              <div className={classNames(projectcss.all, sty.column__fLq)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__osSWz
+                    sty.h1__klUj2
                   )}
                 >
                   {"Contact Us"}
                 </h1>
-                <div className={classNames(projectcss.all, sty.freeBox__vaNer)}>
+                <div className={classNames(projectcss.all, sty.freeBox__ceVe)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___3SJV
+                      sty.text__vq0Hh
                     )}
                   >
                     {"EMAIL US:"}
@@ -932,7 +939,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__uScTz
+                      sty.link___5B0D
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -941,14 +948,12 @@ function PlasmicContactUs__RenderFunc(props) {
                     {"tosinumorenfoundation@gmail.com\r"}
                   </PlasmicLink__>
                 </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___6Cxeg)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__ztFqs)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___45I27
+                      sty.text___1Dqrh
                     )}
                   >
                     {"PHONE:"}
@@ -957,18 +962,18 @@ function PlasmicContactUs__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__bZN
+                      sty.text__yxTyM
                     )}
                   >
                     {"+234 813 072 2129, +1760 829 0816"}
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__qUIiu)}>
+                <div className={classNames(projectcss.all, sty.freeBox__ssWp1)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__t7PJi
+                      sty.text__vVydb
                     )}
                   >
                     {"LOCATION:"}
@@ -977,32 +982,30 @@ function PlasmicContactUs__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__gvHe4
+                      sty.text__xPlvv
                     )}
                   >
                     {"Nigeria (Outreaches across Lagos, Oyo, Osun & Ekiti)"}
                   </div>
                 </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___6O3Kl)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__nUgH)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__tNmL
+                      sty.text__dWe00
                     )}
                   >
                     {"SOCIALS:"}
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__eNs5F)}
+                    className={classNames(projectcss.all, sty.freeBox__jD9Hf)}
                   >
                     <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__hfM1X
+                        sty.link__oSoqU
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -1010,7 +1013,7 @@ function PlasmicContactUs__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__avijN)}
+                        className={classNames(sty.img__nCora)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -1034,7 +1037,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link___5XqKr
+                        sty.link__h232T
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -1042,7 +1045,7 @@ function PlasmicContactUs__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__vhEkF)}
+                        className={classNames(sty.img__tznuB)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -1066,7 +1069,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link___4Ox8A
+                        sty.link__y0A7N
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -1074,7 +1077,7 @@ function PlasmicContactUs__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__mJI)}
+                        className={classNames(sty.img__fbCzl)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
@@ -1097,23 +1100,24 @@ function PlasmicContactUs__RenderFunc(props) {
                   </div>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__k11W7)}>
-                <div className={classNames(projectcss.all, sty.freeBox__t5JOm)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__zPa2K
-                    )}
-                  >
-                    {"MORE LINKS:"}
-                  </div>
+              <div className={classNames(projectcss.all, sty.column___4E1A7)}>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__t4XtC
+                  )}
+                >
+                  {"Links"}
+                </h1>
+                <div className={classNames(projectcss.all, sty.freeBox__hVhfu)}>
                   <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link___7PFvK
+                      sty.link__jntM1
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1126,7 +1130,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__xpNly
+                      sty.link__w3WYa
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1139,7 +1143,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__dqNrO
+                      sty.link__sZWa
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1152,7 +1156,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__smVpe
+                      sty.link__bQXr
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1165,7 +1169,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__dcI5Z
+                      sty.link___413Dc
                     )}
                     component={Link}
                     href={`/gallery`}
@@ -1176,13 +1180,13 @@ function PlasmicContactUs__RenderFunc(props) {
                   </PlasmicLink__>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__w7B7C)}>
+              <div className={classNames(projectcss.all, sty.column___4GJBx)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__fuOlV
+                    sty.h1__d4Xav
                   )}
                 >
                   {"Subscribe to get latest updates"}
@@ -1250,14 +1254,14 @@ function PlasmicContactUs__RenderFunc(props) {
                       <FormItemWrapper
                         className={classNames(
                           "__wab_instance",
-                          sty.formField__yyHf5
+                          sty.formField__utPv
                         )}
                         label={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text___0Amo
+                              sty.text__slpg8
                             )}
                           >
                             {"Your Email"}
@@ -1309,7 +1313,7 @@ function PlasmicContactUs__RenderFunc(props) {
                       <AntdButton
                         className={classNames(
                           "__wab_instance",
-                          sty.button___7FUkw
+                          sty.button__neeHv
                         )}
                         submitsForm={true}
                         type={"primary"}
@@ -1318,7 +1322,7 @@ function PlasmicContactUs__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__jqafy
+                            sty.text__dUkCt
                           )}
                         >
                           {"Subscribe"}

@@ -1189,7 +1189,14 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
               </div>
             </div>
-            <div className={classNames(projectcss.all, sty.columns__zrBv)}>
+            <div
+              className={classNames(projectcss.all, sty.columns__zrBv)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".after-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
+            >
               <div className={classNames(projectcss.all, sty.column__yRsgv)}>
                 <div
                   className={classNames(
@@ -1327,12 +1334,21 @@ function PlasmicHomepage__RenderFunc(props) {
           <section
             data-plasmic-name={"joinCOmmunity"}
             data-plasmic-override={overrides.joinCOmmunity}
-            className={classNames(projectcss.all, sty.joinCOmmunity)}
+            className={classNames(
+              projectcss.all,
+              sty.joinCOmmunity,
+              "C-scroll"
+            )}
           >
             <div
               data-plasmic-name={"community"}
               data-plasmic-override={overrides.community}
               className={classNames(projectcss.all, sty.community)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".C-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
             >
               <div
                 data-plasmic-name={"contentsAbout4"}
@@ -1407,9 +1423,16 @@ function PlasmicHomepage__RenderFunc(props) {
           <div
             data-plasmic-name={"events"}
             data-plasmic-override={overrides.events}
-            className={classNames(projectcss.all, sty.events)}
+            className={classNames(projectcss.all, sty.events, "E-scroll")}
           >
-            <div className={classNames(projectcss.all, sty.freeBox__a62Is)}>
+            <div
+              className={classNames(projectcss.all, sty.freeBox__a62Is)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".E-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"x": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
+            >
               <div className={classNames(projectcss.all, sty.freeBox__nmOo6)} />
               <div
                 className={classNames(
@@ -1422,7 +1445,14 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__zJgX1)}>
-              <div className={classNames(projectcss.all, sty.columns__uryLs)}>
+              <div
+                className={classNames(projectcss.all, sty.columns__uryLs)}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n"scrollTrigger": {\n\n"trigger": ".E-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
+              >
                 <div className={classNames(projectcss.all, sty.column__x3Iok)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__jhIs0)}
@@ -1649,9 +1679,16 @@ function PlasmicHomepage__RenderFunc(props) {
           <div
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
-            className={classNames(projectcss.all, sty.footer)}
+            className={classNames(projectcss.all, sty.footer, "F-scroll")}
           >
-            <div className={classNames(projectcss.all, sty.columns__kML)}>
+            <div
+              className={classNames(projectcss.all, sty.columns__kML)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
+            >
               <div className={classNames(projectcss.all, sty.column__p6DM9)}>
                 <div className={classNames(projectcss.all, sty.freeBox__bFGiM)}>
                   <PlasmicImg__
@@ -1861,18 +1898,19 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__jPkEt)}>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__ap6A4
+                  )}
+                >
+                  {"Links"}
+                </h1>
                 <div
                   className={classNames(projectcss.all, sty.freeBox___03UVr)}
                 >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___159J7
-                    )}
-                  >
-                    {"MORE LINKS:"}
-                  </div>
                   <PlasmicLink__
                     className={classNames(
                       projectcss.all,
