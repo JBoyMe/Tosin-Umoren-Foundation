@@ -63,6 +63,7 @@
     flex-direction: column;
     padding-left: 24px;
     padding-right: 24px;
+    margin-bottom: 32px;
     column-gap: 0px;
   }
 }
@@ -999,6 +1000,8 @@
     padding-left: 24px;
     padding-right: 24px;
     margin-bottom: 32px;
+    height: 100%;
+    min-height: 0;
   }
 }
 @media (max-width: 1023px) {

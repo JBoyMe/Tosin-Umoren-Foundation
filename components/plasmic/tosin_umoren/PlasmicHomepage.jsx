@@ -839,7 +839,9 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.whatWeDo)}
               data-anim={"true"}
               data-anim-props={
-                '{\n\n"scrollTrigger": {\n\n"trigger": ".mid-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                hasVariant(globalVariants, "screen", "tablet")
+                  ? ``
+                  : '{\n\n"scrollTrigger": {\n\n"trigger": ".mid-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
               }
               data-anim-type={"from"}
             >
@@ -899,7 +901,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.freeBox__a5SwJ)}
                     data-anim={"true"}
                     data-anim-props={
-                      '{\n\n"scrollTrigger": {\n\n"trigger": ".object-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                      hasVariant(globalVariants, "screen", "tablet")
+                        ? ``
+                        : '{\n\n"scrollTrigger": {\n\n"trigger": ".object-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
                     }
                     data-anim-type={"from"}
                   >
@@ -1193,7 +1197,9 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.columns__zrBv)}
               data-anim={"true"}
               data-anim-props={
-                '{\n\n"scrollTrigger": {\n\n"trigger": ".after-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                hasVariant(globalVariants, "screen", "tablet")
+                  ? ``
+                  : '{\n\n"scrollTrigger": {\n\n"trigger": ".after-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
               }
               data-anim-type={"from"}
             >
@@ -1346,7 +1352,9 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.community)}
               data-anim={"true"}
               data-anim-props={
-                '{\n\n"scrollTrigger": {\n\n"trigger": ".C-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                hasVariant(globalVariants, "screen", "tablet")
+                  ? ``
+                  : '{\n\n"scrollTrigger": {\n\n"trigger": ".C-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
               }
               data-anim-type={"from"}
             >
@@ -1449,7 +1457,9 @@ function PlasmicHomepage__RenderFunc(props) {
                 className={classNames(projectcss.all, sty.columns__uryLs)}
                 data-anim={"true"}
                 data-anim-props={
-                  '{\n\n"scrollTrigger": {\n\n"trigger": ".E-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                  hasVariant(globalVariants, "screen", "tablet")
+                    ? ``
+                    : '{\n\n"scrollTrigger": {\n\n"trigger": ".E-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
                 }
                 data-anim-type={"from"}
               >
@@ -1685,7 +1695,9 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.columns__kML)}
               data-anim={"true"}
               data-anim-props={
-                '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                hasVariant(globalVariants, "screen", "tablet")
+                  ? ``
+                  : '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
               }
               data-anim-type={"from"}
             >
