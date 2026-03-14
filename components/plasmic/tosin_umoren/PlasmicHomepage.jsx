@@ -274,7 +274,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.link__uovFj
                     )}
                     component={Link}
-                    href={""}
+                    href={"#What we do"}
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
@@ -831,6 +831,7 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-name={"whatWeDo2"}
             data-plasmic-override={overrides.whatWeDo2}
             className={classNames(projectcss.all, sty.whatWeDo2, "mid-scroll")}
+            id={"What we do"}
           >
             <div
               data-plasmic-name={"whatWeDo"}
