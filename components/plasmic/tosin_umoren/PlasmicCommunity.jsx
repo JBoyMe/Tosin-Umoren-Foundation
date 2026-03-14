@@ -222,6 +222,9 @@ function PlasmicCommunity__RenderFunc(props) {
             data-plasmic-name={"nav"}
             data-plasmic-override={overrides.nav}
             className={classNames(projectcss.all, sty.nav)}
+            data-anim={"true"}
+            data-anim-props={``}
+            data-anim-type={"fromTo"}
           >
             <NavigationBar
               data-plasmic-name={"navBar"}
@@ -231,7 +234,7 @@ function PlasmicCommunity__RenderFunc(props) {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
-                    sty.link__zuusI
+                    sty.link___3WLyQ
                   )}
                   component={Link}
                   href={"#"}
@@ -240,14 +243,14 @@ function PlasmicCommunity__RenderFunc(props) {
                 >
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__cQeF4)}
+                    className={classNames(sty.img__xUm12)}
                     displayHeight={"74px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={
-                      hasVariant(globalVariants, "screen", "tablet")
+                      hasVariant(globalVariants, "screen", "mobile")
                         ? "100%"
                         : "156px"
                     }
@@ -264,7 +267,7 @@ function PlasmicCommunity__RenderFunc(props) {
               closeButton={
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img__kQph4)}
+                  className={classNames(sty.img__rQG7)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
@@ -282,7 +285,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__xnJyp
+                      sty.link__owei
                     )}
                     component={Link}
                     href={"/"}
@@ -296,7 +299,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__qE1Y6
+                      sty.link__ypHMy
                     )}
                     component={Link}
                     href={`/about-us`}
@@ -310,10 +313,10 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__qcfxb
+                      sty.link___9Qdvm
                     )}
                     component={Link}
-                    href={`/about-us`}
+                    href={"/#Wdo"}
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
@@ -324,7 +327,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__qZoD
+                      sty.link___0YssN
                     )}
                     component={Link}
                     href={`/gallery`}
@@ -338,10 +341,10 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__kZbD5
+                      sty.link___53GK5
                     )}
                     component={Link}
-                    href={`/community`}
+                    href={`/contact-us`}
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
@@ -352,7 +355,7 @@ function PlasmicCommunity__RenderFunc(props) {
               openButton={
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img__fWm5C)}
+                  className={classNames(sty.img__jc5Oo)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}

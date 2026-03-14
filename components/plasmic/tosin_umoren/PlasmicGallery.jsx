@@ -169,6 +169,9 @@ function PlasmicGallery__RenderFunc(props) {
             data-plasmic-name={"nav"}
             data-plasmic-override={overrides.nav}
             className={classNames(projectcss.all, sty.nav)}
+            data-anim={"true"}
+            data-anim-props={``}
+            data-anim-type={"fromTo"}
           >
             <NavigationBar
               data-plasmic-name={"navBar"}
@@ -178,7 +181,7 @@ function PlasmicGallery__RenderFunc(props) {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
-                    sty.link__n7Sk4
+                    sty.link___91ALj
                   )}
                   component={Link}
                   href={"#"}
@@ -187,14 +190,14 @@ function PlasmicGallery__RenderFunc(props) {
                 >
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__dhe3F)}
+                    className={classNames(sty.img__iAKl)}
                     displayHeight={"74px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={
-                      hasVariant(globalVariants, "screen", "tablet")
+                      hasVariant(globalVariants, "screen", "mobile")
                         ? "100%"
                         : "156px"
                     }
@@ -211,7 +214,7 @@ function PlasmicGallery__RenderFunc(props) {
               closeButton={
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img___8Hj9)}
+                  className={classNames(sty.img__mZoMu)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
@@ -229,7 +232,7 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__lukTq
+                      sty.link__quWm9
                     )}
                     component={Link}
                     href={"/"}
@@ -243,7 +246,7 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__qprJu
+                      sty.link___0UPrU
                     )}
                     component={Link}
                     href={`/about-us`}
@@ -257,10 +260,10 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__aJj2
+                      sty.link__uwz5X
                     )}
                     component={Link}
-                    href={`/about-us`}
+                    href={"/#Wdo"}
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
@@ -271,7 +274,7 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__bAtfC
+                      sty.link___9KCtw
                     )}
                     component={Link}
                     href={`/gallery`}
@@ -285,10 +288,10 @@ function PlasmicGallery__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link___84Vqp
+                      sty.link__acu0O
                     )}
                     component={Link}
-                    href={`/community`}
+                    href={`/contact-us`}
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
@@ -299,7 +302,7 @@ function PlasmicGallery__RenderFunc(props) {
               openButton={
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img__niYq)}
+                  className={classNames(sty.img__poH38)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
