@@ -357,11 +357,21 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
+            data-anim={"true"}
+            data-anim-props={
+              '{\n\n           "from": {"autoAlpha":0,\n"scale": 1.03},\n\n           "to": {"autoAlpha":1,\n"scale": 1},\n\n           "duration": 0.8\n\n         }'
+            }
+            data-anim-type={"fromTo"}
           >
             <div
               data-plasmic-name={"contents"}
               data-plasmic-override={overrides.contents}
               className={classNames(projectcss.all, sty.contents)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n           "from": {"autoAlpha":0,\n"x": -100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+              }
+              data-anim-type={"fromTo"}
             >
               <h1
                 data-plasmic-name={"heroHeading"}
@@ -372,11 +382,6 @@ function PlasmicHomepage__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.heroHeading
                 )}
-                data-anim={"true"}
-                data-anim-props={
-                  '{\n\n           "from": {"autoAlpha":0,\n"x": 100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
-                }
-                data-anim-type={"fromTo"}
               >
                 {"Love, care & support for the young and old."}
               </h1>
@@ -386,11 +391,6 @@ function PlasmicHomepage__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.text__s3L3Q
                 )}
-                data-anim={"true"}
-                data-anim-props={
-                  '{\n\n           "from": {"autoAlpha":0,\n"scale": 0.5},\n\n           "to": {"autoAlpha":1,\n"scale": 1},\n\n           "duration": 0.8\n\n         }'
-                }
-                data-anim-type={"fromTo"}
               >
                 {
                   "We offer educational support, skills empowerment programs, community outreach initiatives, mentorship, and humanitarian assistance designed to uplift, inspire, and create lasting impact."
@@ -459,15 +459,17 @@ function PlasmicHomepage__RenderFunc(props) {
                 </PlasmicLink__>
               </div>
             </div>
-            <div className={classNames(projectcss.all, sty.column__wit0P)}>
+            <div
+              className={classNames(projectcss.all, sty.column__wit0P)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n           "from": {"autoAlpha":0,\n"x": 100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+              }
+              data-anim-type={"fromTo"}
+            >
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__qzGLw)}
-                data-anim={"true"}
-                data-anim-props={
-                  '{\n\n           "from": {"autoAlpha":0,\n"scale": 0.5},\n\n           "to": {"autoAlpha":1,\n"scale": 1},\n\n           "duration": 0.8\n\n         }'
-                }
-                data-anim-type={"fromTo"}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}

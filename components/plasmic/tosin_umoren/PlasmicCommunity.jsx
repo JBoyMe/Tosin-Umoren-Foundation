@@ -35,6 +35,7 @@ import { inputHelpers as AntdInput_Helpers } from "@plasmicpkgs/antd5/skinny/reg
 import { AntdTextArea } from "@plasmicpkgs/antd5/skinny/registerInput";
 import { inputHelpers as AntdTextArea_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput";
 import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: sUj6qNzu2DyGvGvfQpYywu/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: sUj6qNzu2DyGvGvfQpYywu/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -409,6 +410,11 @@ function PlasmicCommunity__RenderFunc(props) {
                 data-plasmic-name={"contentsAbout4"}
                 data-plasmic-override={overrides.contentsAbout4}
                 className={classNames(projectcss.all, sty.contentsAbout4)}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n           "from": {"autoAlpha":0,\n"x": -100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+                }
+                data-anim-type={"fromTo"}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__vMrtT)}>
                   <div
@@ -453,6 +459,11 @@ function PlasmicCommunity__RenderFunc(props) {
                 data-plasmic-name={"contentsAbout5"}
                 data-plasmic-override={overrides.contentsAbout5}
                 className={classNames(projectcss.all, sty.contentsAbout5)}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n           "from": {"autoAlpha":0,\n"x": 100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+                }
+                data-anim-type={"fromTo"}
               >
                 <PlasmicImg__
                   alt={""}
@@ -842,32 +853,44 @@ function PlasmicCommunity__RenderFunc(props) {
           <div
             data-plasmic-name={"events"}
             data-plasmic-override={overrides.events}
-            className={classNames(projectcss.all, sty.events)}
+            className={classNames(projectcss.all, sty.events, "E-scroll")}
           >
-            <div className={classNames(projectcss.all, sty.freeBox___891X)}>
-              <div className={classNames(projectcss.all, sty.freeBox__sdOr)} />
+            <div
+              className={classNames(projectcss.all, sty.freeBox__rZtg6)}
+              data-anim={"true"}
+              data-anim-props={``}
+              data-anim-type={"from"}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__mDmDx)} />
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text___8FvNg
+                  sty.text__hkqjn
                 )}
               >
                 {"Our Events"}
               </div>
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__x8Zxk)}>
-              <div className={classNames(projectcss.all, sty.columns__hbMi6)}>
-                <div className={classNames(projectcss.all, sty.column__b6LAj)}>
+            <div className={classNames(projectcss.all, sty.freeBox__gWGvl)}>
+              <div
+                className={classNames(projectcss.all, sty.columns___29VRx)}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n"scrollTrigger": {\n\n"trigger": ".E-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
+              >
+                <div className={classNames(projectcss.all, sty.column__toGk1)}>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox___0Lewc)}
+                    className={classNames(projectcss.all, sty.freeBox___0Ss2U)}
                   >
                     <h1
                       className={classNames(
                         projectcss.all,
                         projectcss.h1,
                         projectcss.__wab_text,
-                        sty.h1__srGA
+                        sty.h1__umX1A
                       )}
                     >
                       <React.Fragment>
@@ -878,7 +901,7 @@ function PlasmicCommunity__RenderFunc(props) {
                               projectcss.all,
                               projectcss.h4,
                               projectcss.__wab_text,
-                              sty.h4__lLxTu
+                              sty.h4__xKVg7
                             )}
                           >
                             <React.Fragment>
@@ -897,18 +920,18 @@ function PlasmicCommunity__RenderFunc(props) {
                       </React.Fragment>
                     </h1>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__tEoX1)}
+                      className={classNames(projectcss.all, sty.freeBox__mo7Ko)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox___4RVUh
+                          sty.freeBox__lPby
                         )}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox___8JflZ
+                            sty.freeBox__dz2Au
                           )}
                         />
 
@@ -916,7 +939,7 @@ function PlasmicCommunity__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__ueUzc
+                            sty.text__ojF3F
                           )}
                         >
                           {"Next Events"}
@@ -927,7 +950,7 @@ function PlasmicCommunity__RenderFunc(props) {
                           projectcss.all,
                           projectcss.h1,
                           projectcss.__wab_text,
-                          sty.h1__aecB6
+                          sty.h1__cFiIy
                         )}
                       >
                         {"Celebration of Mothers for Women\u2019s Day"}
@@ -937,7 +960,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__hJypY
+                        sty.link__c9HkL
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -945,17 +968,13 @@ function PlasmicCommunity__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__ls4C)}
+                        className={classNames(sty.img___6VwRu)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
                         displayMinHeight={"0"}
                         displayMinWidth={"0"}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "tablet")
-                            ? "60%"
-                            : "80%"
-                        }
+                        displayWidth={"80%"}
                         loading={"lazy"}
                         src={{
                           src: "/plasmic/tosin_umoren/images/image23.png",
@@ -967,16 +986,16 @@ function PlasmicCommunity__RenderFunc(props) {
                     </PlasmicLink__>
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.column__qkShT)}>
+                <div className={classNames(projectcss.all, sty.column__cLUg8)}>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__nGyQh)}
+                    className={classNames(projectcss.all, sty.freeBox__hAkQu)}
                   >
                     <h1
                       className={classNames(
                         projectcss.all,
                         projectcss.h1,
                         projectcss.__wab_text,
-                        sty.h1___8Jefm
+                        sty.h1__lxf4M
                       )}
                     >
                       <React.Fragment>
@@ -987,7 +1006,7 @@ function PlasmicCommunity__RenderFunc(props) {
                               projectcss.all,
                               projectcss.h4,
                               projectcss.__wab_text,
-                              sty.h4___2GKos
+                              sty.h4__otgtv
                             )}
                           >
                             <React.Fragment>
@@ -1006,18 +1025,18 @@ function PlasmicCommunity__RenderFunc(props) {
                       </React.Fragment>
                     </h1>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__o76Pn)}
+                      className={classNames(projectcss.all, sty.freeBox__zKeJy)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox___5Rlaa
+                          sty.freeBox__cVxiA
                         )}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__rUUsP
+                            sty.freeBox__gXgex
                           )}
                         />
 
@@ -1025,7 +1044,7 @@ function PlasmicCommunity__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__tEvWu
+                            sty.text__xY6Ks
                           )}
                         >
                           {"Next Events"}
@@ -1036,7 +1055,7 @@ function PlasmicCommunity__RenderFunc(props) {
                           projectcss.all,
                           projectcss.h1,
                           projectcss.__wab_text,
-                          sty.h1__hlks
+                          sty.h1__fAtj6
                         )}
                       >
                         {
@@ -1048,7 +1067,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__bcwmx
+                        sty.link__ezWyO
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -1056,17 +1075,13 @@ function PlasmicCommunity__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__qkAIt)}
+                        className={classNames(sty.img__loCjV)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
                         displayMinHeight={"0"}
                         displayMinWidth={"0"}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "tablet")
-                            ? "60%"
-                            : "80%"
-                        }
+                        displayWidth={"80%"}
                         loading={"lazy"}
                         src={{
                           src: "/plasmic/tosin_umoren/images/image23.png",
@@ -1087,18 +1102,18 @@ function PlasmicCommunity__RenderFunc(props) {
             className={classNames(projectcss.all, sty.footer, "F-scroll")}
           >
             <div
-              className={classNames(projectcss.all, sty.columns__c5ZyC)}
+              className={classNames(projectcss.all, sty.columns__x17Da)}
               data-anim={"true"}
               data-anim-props={
                 '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
               }
               data-anim-type={"from"}
             >
-              <div className={classNames(projectcss.all, sty.column__d2IvX)}>
-                <div className={classNames(projectcss.all, sty.freeBox__wxAdd)}>
+              <div className={classNames(projectcss.all, sty.column___1K84J)}>
+                <div className={classNames(projectcss.all, sty.freeBox__kvHxi)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__yTbg)}
+                    className={classNames(sty.img__czm2S)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -1115,23 +1130,23 @@ function PlasmicCommunity__RenderFunc(props) {
                   />
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__y4KZo)}>
+              <div className={classNames(projectcss.all, sty.column__siXtj)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__niJr
+                    sty.h1__ctPr1
                   )}
                 >
                   {"Contact Us"}
                 </h1>
-                <div className={classNames(projectcss.all, sty.freeBox__siafp)}>
+                <div className={classNames(projectcss.all, sty.freeBox__soJ7)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__a8Vl3
+                      sty.text___08Ueg
                     )}
                   >
                     {"EMAIL US:"}
@@ -1141,7 +1156,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link___1ORpq
+                      sty.link__p2N3B
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1150,12 +1165,12 @@ function PlasmicCommunity__RenderFunc(props) {
                     {"tosinumorenfoundation@gmail.com\r"}
                   </PlasmicLink__>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__mlDnV)}>
+                <div className={classNames(projectcss.all, sty.freeBox__zQNxR)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__x0JSw
+                      sty.text__p4Yna
                     )}
                   >
                     {"PHONE:"}
@@ -1164,18 +1179,18 @@ function PlasmicCommunity__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___123Ri
+                      sty.text__fbu32
                     )}
                   >
                     {"+234 813 072 2129, +1760 829 0816"}
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__dX33)}>
+                <div className={classNames(projectcss.all, sty.freeBox__rFcfx)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__j2D8S
+                      sty.text__oeVa
                     )}
                   >
                     {"LOCATION:"}
@@ -1184,30 +1199,28 @@ function PlasmicCommunity__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__thEjK
+                      sty.text__iazz0
                     )}
                   >
                     {"Nigeria (Outreaches across Lagos, Oyo, Osun & Ekiti)"}
                   </div>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__uT9Jf)}>
+                <div className={classNames(projectcss.all, sty.freeBox__jmPg6)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___4Yw7U
+                      sty.text___3I8Tc
                     )}
                   >
                     {"SOCIALS:"}
                   </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___4UJl8)}
-                  >
+                  <div className={classNames(projectcss.all, sty.freeBox__bNX)}>
                     <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__ghEo
+                        sty.link__xrxoo
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -1215,17 +1228,13 @@ function PlasmicCommunity__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img___1Uv0U)}
+                        className={classNames(sty.img__dc189)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
                         displayMinHeight={"0"}
                         displayMinWidth={"0"}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobile")
-                            ? "80%"
-                            : "auto"
-                        }
+                        displayWidth={"auto"}
                         loading={"lazy"}
                         src={{
                           src: "/plasmic/tosin_umoren/images/image26.png",
@@ -1239,7 +1248,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link___2JEtp
+                        sty.link__zlGqC
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -1247,17 +1256,13 @@ function PlasmicCommunity__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__gjYs3)}
+                        className={classNames(sty.img__xb3Nu)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
                         displayMinHeight={"0"}
                         displayMinWidth={"0"}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobile")
-                            ? "80%"
-                            : "auto"
-                        }
+                        displayWidth={"auto"}
                         loading={"lazy"}
                         src={{
                           src: "/plasmic/tosin_umoren/images/image25.png",
@@ -1271,7 +1276,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__pMnCh
+                        sty.link__g44C6
                       )}
                       component={Link}
                       legacyBehavior={false}
@@ -1279,17 +1284,13 @@ function PlasmicCommunity__RenderFunc(props) {
                     >
                       <PlasmicImg__
                         alt={""}
-                        className={classNames(sty.img__zy6AL)}
+                        className={classNames(sty.img__iwbe)}
                         displayHeight={"auto"}
                         displayMaxHeight={"none"}
                         displayMaxWidth={"100%"}
                         displayMinHeight={"0"}
                         displayMinWidth={"0"}
-                        displayWidth={
-                          hasVariant(globalVariants, "screen", "mobile")
-                            ? "80%"
-                            : "auto"
-                        }
+                        displayWidth={"auto"}
                         loading={"lazy"}
                         src={{
                           src: "/plasmic/tosin_umoren/images/image24.png",
@@ -1302,24 +1303,26 @@ function PlasmicCommunity__RenderFunc(props) {
                   </div>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__lyMMn)}>
+              <div className={classNames(projectcss.all, sty.column__odm0U)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__lnKf8
+                    sty.h1__o6V2
                   )}
                 >
                   {"Links"}
                 </h1>
-                <div className={classNames(projectcss.all, sty.freeBox__n3Igs)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___9Jmht)}
+                >
                   <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__v3XQr
+                      sty.link__eytIq
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1332,7 +1335,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__jqf5Y
+                      sty.link__sIMlm
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1345,7 +1348,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__kx10P
+                      sty.link__bmtv7
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1358,7 +1361,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__o26H
+                      sty.link__xstsm
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -1371,10 +1374,9 @@ function PlasmicCommunity__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__wuurs
+                      sty.link__aQnLp
                     )}
                     component={Link}
-                    href={`/gallery`}
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
@@ -1382,13 +1384,13 @@ function PlasmicCommunity__RenderFunc(props) {
                   </PlasmicLink__>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.column__bgcxU)}>
+              <div className={classNames(projectcss.all, sty.column__jpsu1)}>
                 <h1
                   className={classNames(
                     projectcss.all,
                     projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__iloTg
+                    sty.h1__wxozj
                   )}
                 >
                   {"Subscribe to get latest updates"}
@@ -1456,14 +1458,14 @@ function PlasmicCommunity__RenderFunc(props) {
                       <FormItemWrapper
                         className={classNames(
                           "__wab_instance",
-                          sty.formField__dbNte
+                          sty.formField___4Fhpf
                         )}
                         label={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__tvhht
+                              sty.text___5U22K
                             )}
                           >
                             {"Your Email"}
@@ -1515,7 +1517,7 @@ function PlasmicCommunity__RenderFunc(props) {
                       <AntdButton
                         className={classNames(
                           "__wab_instance",
-                          sty.button__yr2KW
+                          sty.button__weMjI
                         )}
                         submitsForm={true}
                         type={"primary"}
@@ -1524,7 +1526,7 @@ function PlasmicCommunity__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__faiwK
+                            sty.text__teuR5
                           )}
                         >
                           {"Subscribe"}
@@ -1536,6 +1538,14 @@ function PlasmicCommunity__RenderFunc(props) {
               </div>
             </div>
           </div>
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              '<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MorphSVGPlugin.min.js"></script>\r\n\r\n <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/DrawSVGPlugin.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathPlugin.min.js">\r\n</script>\r\n\r\n <!-- Three.js + GLTFLoader (Global versions used for simple testing) -->\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js" type="module"></script>\r\n    \r\n    <!-- We need to expose GLTFLoader to window for our script to pick it up if not bundled -->\r\n    <script type="module">\r\n        import { GLTFLoader } from \'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js\';\r\n        window.GLTFLoader = GLTFLoader;\r\n    </script>\r\n\r\n\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/animotion-saply-plus@5.0.8/dist/animotion-saply.min.js"></script>'
+            }
+          />
         </div>
       </div>
     </React.Fragment>
@@ -1562,7 +1572,8 @@ const PlasmicDescendants = {
     "events",
     "footer",
     "form2",
-    "input5"
+    "input5",
+    "embedHtml"
   ],
 
   nav: ["nav", "navBar", "heroBtn3"],
@@ -1597,7 +1608,8 @@ const PlasmicDescendants = {
   events: ["events"],
   footer: ["footer", "form2", "input5"],
   form2: ["form2", "input5"],
-  input5: ["input5"]
+  input5: ["input5"],
+  embedHtml: ["embedHtml"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -1650,6 +1662,7 @@ export const PlasmicCommunity = Object.assign(
     footer: makeNodeComponent("footer"),
     form2: makeNodeComponent("form2"),
     input5: makeNodeComponent("input5"),
+    embedHtml: makeNodeComponent("embedHtml"),
     // Metadata about props expected for PlasmicCommunity
     internalVariantProps: PlasmicCommunity__VariantProps,
     internalArgProps: PlasmicCommunity__ArgProps,

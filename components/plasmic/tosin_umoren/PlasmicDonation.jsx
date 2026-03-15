@@ -33,6 +33,7 @@ import { FormItemWrapper } from "@plasmicpkgs/antd5/skinny/FormItem";
 import { AntdInput } from "@plasmicpkgs/antd5/skinny/registerInput";
 import { inputHelpers as AntdInput_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput";
 import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: sUj6qNzu2DyGvGvfQpYywu/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: sUj6qNzu2DyGvGvfQpYywu/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -353,7 +354,14 @@ function PlasmicDonation__RenderFunc(props) {
                 data-plasmic-override={overrides.innerContents4}
                 className={classNames(projectcss.all, sty.innerContents4)}
               >
-                <div className={classNames(projectcss.all, sty.freeBox__edjvY)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__edjvY)}
+                  data-anim={"true"}
+                  data-anim-props={
+                    '{\n\n           "from": {"autoAlpha":0,\n"x": -100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+                  }
+                  data-anim-type={"fromTo"}
+                >
                   <div
                     className={classNames(projectcss.all, sty.freeBox__sOnM)}
                   >
@@ -409,7 +417,14 @@ function PlasmicDonation__RenderFunc(props) {
                     {"Donate Below"}
                   </PlasmicLink__>
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__eGbBc)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__eGbBc)}
+                  data-anim={"true"}
+                  data-anim-props={
+                    '{\n\n           "from": {"autoAlpha":0,\n"x": 100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+                  }
+                  data-anim-type={"fromTo"}
+                >
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__e2Vbe)}
@@ -434,7 +449,7 @@ function PlasmicDonation__RenderFunc(props) {
           <div
             data-plasmic-name={"wrapper"}
             data-plasmic-override={overrides.wrapper}
-            className={classNames(projectcss.all, sty.wrapper)}
+            className={classNames(projectcss.all, sty.wrapper, "d-scroll")}
           >
             <div className={classNames(projectcss.all, sty.freeBox___5TJ)}>
               <h1
@@ -444,15 +459,31 @@ function PlasmicDonation__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.h1___6Bfb3
                 )}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n"scrollTrigger": {\n\n"trigger": ".d-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"x": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
               >
                 {"Donation Options"}
               </h1>
               <div
                 data-plasmic-name={"innerContents7"}
                 data-plasmic-override={overrides.innerContents7}
-                className={classNames(projectcss.all, sty.innerContents7)}
+                className={classNames(
+                  projectcss.all,
+                  sty.innerContents7,
+                  "in-scroll"
+                )}
               >
-                <div className={classNames(projectcss.all, sty.columns__gnFmF)}>
+                <div
+                  className={classNames(projectcss.all, sty.columns__gnFmF)}
+                  data-anim={"true"}
+                  data-anim-props={
+                    '{\n\n"scrollTrigger": {\n\n"trigger": ".in-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                  }
+                  data-anim-type={"from"}
+                >
                   <div
                     className={classNames(projectcss.all, sty.column__dCu43)}
                   >
@@ -563,12 +594,17 @@ function PlasmicDonation__RenderFunc(props) {
           <section
             data-plasmic-name={"helpOthers"}
             data-plasmic-override={overrides.helpOthers}
-            className={classNames(projectcss.all, sty.helpOthers)}
+            className={classNames(projectcss.all, sty.helpOthers, "u-scroll")}
           >
             <div
               data-plasmic-name={"help"}
               data-plasmic-override={overrides.help}
               className={classNames(projectcss.all, sty.help)}
+              data-anim={"true"}
+              data-anim-props={
+                '{\n\n"scrollTrigger": {\n\n"trigger": ".u-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+              }
+              data-anim-type={"from"}
             >
               <div
                 data-plasmic-name={"contentsAbout2"}
@@ -1101,6 +1137,14 @@ function PlasmicDonation__RenderFunc(props) {
               </div>
             </div>
           </div>
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              '<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MorphSVGPlugin.min.js"></script>\r\n\r\n <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/DrawSVGPlugin.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathPlugin.min.js">\r\n</script>\r\n\r\n <!-- Three.js + GLTFLoader (Global versions used for simple testing) -->\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js" type="module"></script>\r\n    \r\n    <!-- We need to expose GLTFLoader to window for our script to pick it up if not bundled -->\r\n    <script type="module">\r\n        import { GLTFLoader } from \'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js\';\r\n        window.GLTFLoader = GLTFLoader;\r\n    </script>\r\n\r\n\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/animotion-saply-plus@5.0.8/dist/animotion-saply.min.js"></script>'
+            }
+          />
         </div>
       </div>
     </React.Fragment>
@@ -1128,7 +1172,8 @@ const PlasmicDescendants = {
     "form",
     "formField",
     "input",
-    "button"
+    "button",
+    "embedHtml"
   ],
 
   nav: ["nav", "navBar", "heroBtn3"],
@@ -1156,7 +1201,8 @@ const PlasmicDescendants = {
   form: ["form", "formField", "input", "button"],
   formField: ["formField", "input"],
   input: ["input"],
-  button: ["button"]
+  button: ["button"],
+  embedHtml: ["embedHtml"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -1210,6 +1256,7 @@ export const PlasmicDonation = Object.assign(
     formField: makeNodeComponent("formField"),
     input: makeNodeComponent("input"),
     button: makeNodeComponent("button"),
+    embedHtml: makeNodeComponent("embedHtml"),
     // Metadata about props expected for PlasmicDonation
     internalVariantProps: PlasmicDonation__VariantProps,
     internalArgProps: PlasmicDonation__ArgProps,
