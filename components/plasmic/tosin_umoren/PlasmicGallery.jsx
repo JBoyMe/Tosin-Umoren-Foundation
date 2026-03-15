@@ -33,6 +33,7 @@ import { FormItemWrapper } from "@plasmicpkgs/antd5/skinny/FormItem";
 import { AntdInput } from "@plasmicpkgs/antd5/skinny/registerInput";
 import { inputHelpers as AntdInput_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput";
 import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: sUj6qNzu2DyGvGvfQpYywu/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: sUj6qNzu2DyGvGvfQpYywu/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -345,7 +346,7 @@ function PlasmicGallery__RenderFunc(props) {
           <section
             data-plasmic-name={"pageWrapper2"}
             data-plasmic-override={overrides.pageWrapper2}
-            className={classNames(projectcss.all, sty.pageWrapper2)}
+            className={classNames(projectcss.all, sty.pageWrapper2, "g-main")}
           >
             <div
               data-plasmic-name={"aboutUs2"}
@@ -355,7 +356,12 @@ function PlasmicGallery__RenderFunc(props) {
               <div
                 data-plasmic-name={"contentsAbout3"}
                 data-plasmic-override={overrides.contentsAbout3}
-                className={classNames(projectcss.all, sty.contentsAbout3)}
+                className={classNames(projectcss.all, sty.contentsAbout3, ``)}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n           "from": {"autoAlpha":0,\n"x": 100},\n\n           "to": {"autoAlpha":1,\n"x": 0},\n\n           "duration": 0.8\n\n         }'
+                }
+                data-anim-type={"fromTo"}
               >
                 <div
                   className={classNames(projectcss.all, sty.freeBox___7H8Pn)}
@@ -382,23 +388,75 @@ function PlasmicGallery__RenderFunc(props) {
                 </div>
               </div>
             </div>
-            <div className={classNames(projectcss.all, sty.columns__jD7QR)}>
-              <div className={classNames(projectcss.all, sty.column__wCppZ)} />
-              <div className={classNames(projectcss.all, sty.column__xYYg0)} />
-              <div className={classNames(projectcss.all, sty.column__jeAkS)} />
-              <div className={classNames(projectcss.all, sty.column__l57M2)} />
+            <div
+              data-plasmic-name={"wrapper"}
+              data-plasmic-override={overrides.wrapper}
+              className={classNames(projectcss.all, sty.wrapper)}
+            >
+              <div
+                className={classNames(projectcss.all, sty.columns__jD7QR)}
+                data-anim={"true"}
+                data-anim-props={
+                  hasVariant(globalVariants, "screen", "tablet")
+                    ? ``
+                    : '{\n\n           "from": {"autoAlpha":0,\n"scale": 1.5},\n\n           "to": {"autoAlpha":1,\n"scale": 1},\n\n           "duration": 0.8\n\n         }'
+                }
+                data-anim-type={"fromTo"}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.column__wCppZ)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__xYYg0)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__jeAkS)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__l57M2)}
+                />
+              </div>
             </div>
-            <div className={classNames(projectcss.all, sty.columns__xWgof)}>
-              <div className={classNames(projectcss.all, sty.column__zd4Kc)} />
-              <div className={classNames(projectcss.all, sty.column__leTsz)} />
-              <div className={classNames(projectcss.all, sty.column___2ZKoj)} />
-              <div className={classNames(projectcss.all, sty.column__ocvVc)} />
+            <div
+              data-plasmic-name={"wrapper2"}
+              data-plasmic-override={overrides.wrapper2}
+              className={classNames(projectcss.all, sty.wrapper2, "g-2")}
+            >
+              <div
+                className={classNames(projectcss.all, sty.columns__xWgof)}
+                data-anim={"true"}
+                data-anim-props={
+                  hasVariant(globalVariants, "screen", "tablet")
+                    ? ``
+                    : '{\n\n"scrollTrigger": {\n\n"trigger": ".g-2",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.column__zd4Kc)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__leTsz)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column___2ZKoj)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__ocvVc)}
+                />
+              </div>
             </div>
           </section>
           <section
             data-plasmic-name={"pageWrapper3"}
             data-plasmic-override={overrides.pageWrapper3}
-            className={classNames(projectcss.all, sty.pageWrapper3)}
+            className={classNames(projectcss.all, sty.pageWrapper3, "g-second")}
           >
             <div
               data-plasmic-name={"aboutUs3"}
@@ -409,6 +467,11 @@ function PlasmicGallery__RenderFunc(props) {
                 data-plasmic-name={"contentsAbout4"}
                 data-plasmic-override={overrides.contentsAbout4}
                 className={classNames(projectcss.all, sty.contentsAbout4)}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n"scrollTrigger": {\n\n"trigger": ".g-second",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
               >
                 <div
                   className={classNames(projectcss.all, sty.freeBox___2Y9Iw)}
@@ -425,23 +488,75 @@ function PlasmicGallery__RenderFunc(props) {
                 </div>
               </div>
             </div>
-            <div className={classNames(projectcss.all, sty.columns__mSazQ)}>
-              <div className={classNames(projectcss.all, sty.column__ecb0O)} />
-              <div className={classNames(projectcss.all, sty.column___7FBiu)} />
-              <div className={classNames(projectcss.all, sty.column__iTl68)} />
-              <div className={classNames(projectcss.all, sty.column__cs2U9)} />
+            <div
+              data-plasmic-name={"wrapper3"}
+              data-plasmic-override={overrides.wrapper3}
+              className={classNames(projectcss.all, sty.wrapper3, "g-out")}
+            >
+              <div
+                className={classNames(projectcss.all, sty.columns__mSazQ)}
+                data-anim={"true"}
+                data-anim-props={
+                  hasVariant(globalVariants, "screen", "tablet")
+                    ? ``
+                    : '{\n\n"scrollTrigger": {\n\n"trigger": ".g-out",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.column__ecb0O)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column___7FBiu)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__iTl68)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__cs2U9)}
+                />
+              </div>
             </div>
-            <div className={classNames(projectcss.all, sty.columns__rB6R)}>
-              <div className={classNames(projectcss.all, sty.column__gm13R)} />
-              <div className={classNames(projectcss.all, sty.column__n4Seu)} />
-              <div className={classNames(projectcss.all, sty.column__zCyKz)} />
-              <div className={classNames(projectcss.all, sty.column__tPytz)} />
+            <div
+              data-plasmic-name={"wrapper4"}
+              data-plasmic-override={overrides.wrapper4}
+              className={classNames(projectcss.all, sty.wrapper4, "g-out3")}
+            >
+              <div
+                className={classNames(projectcss.all, sty.columns__rB6R)}
+                data-anim={"true"}
+                data-anim-props={
+                  hasVariant(globalVariants, "screen", "tablet")
+                    ? ``
+                    : '{\n\n"scrollTrigger": {\n\n"trigger": ".g-out3",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.column__gm13R)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__n4Seu)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__zCyKz)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__tPytz)}
+                />
+              </div>
             </div>
           </section>
           <section
             data-plasmic-name={"pageWrapper4"}
             data-plasmic-override={overrides.pageWrapper4}
-            className={classNames(projectcss.all, sty.pageWrapper4)}
+            className={classNames(projectcss.all, sty.pageWrapper4, "g-third")}
           >
             <div
               data-plasmic-name={"aboutUs4"}
@@ -452,6 +567,11 @@ function PlasmicGallery__RenderFunc(props) {
                 data-plasmic-name={"contentsAbout5"}
                 data-plasmic-override={overrides.contentsAbout5}
                 className={classNames(projectcss.all, sty.contentsAbout5)}
+                data-anim={"true"}
+                data-anim-props={
+                  '{\n\n"scrollTrigger": {\n\n"trigger": ".g-third",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__wv0U)}>
                   <div
@@ -466,17 +586,69 @@ function PlasmicGallery__RenderFunc(props) {
                 </div>
               </div>
             </div>
-            <div className={classNames(projectcss.all, sty.columns__g7Eed)}>
-              <div className={classNames(projectcss.all, sty.column___1TNEj)} />
-              <div className={classNames(projectcss.all, sty.column__r2D5Z)} />
-              <div className={classNames(projectcss.all, sty.column___18NUl)} />
-              <div className={classNames(projectcss.all, sty.column___9KnxZ)} />
+            <div
+              data-plasmic-name={"wrapper5"}
+              data-plasmic-override={overrides.wrapper5}
+              className={classNames(projectcss.all, sty.wrapper5, "g-out4")}
+            >
+              <div
+                className={classNames(projectcss.all, sty.columns__g7Eed)}
+                data-anim={"true"}
+                data-anim-props={
+                  hasVariant(globalVariants, "screen", "tablet")
+                    ? ``
+                    : '{\n\n"scrollTrigger": {\n\n"trigger": ".g-third",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.column___1TNEj)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__r2D5Z)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column___18NUl)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column___9KnxZ)}
+                />
+              </div>
             </div>
-            <div className={classNames(projectcss.all, sty.columns__wO5Ub)}>
-              <div className={classNames(projectcss.all, sty.column__lr7Za)} />
-              <div className={classNames(projectcss.all, sty.column__tuHb1)} />
-              <div className={classNames(projectcss.all, sty.column___1Ig7H)} />
-              <div className={classNames(projectcss.all, sty.column___6Sfj)} />
+            <div
+              data-plasmic-name={"wrapper6"}
+              data-plasmic-override={overrides.wrapper6}
+              className={classNames(projectcss.all, sty.wrapper6, "g-fourth")}
+            >
+              <div
+                className={classNames(projectcss.all, sty.columns__wO5Ub)}
+                data-anim={"true"}
+                data-anim-props={
+                  hasVariant(globalVariants, "screen", "tablet")
+                    ? ``
+                    : '{\n\n"scrollTrigger": {\n\n"trigger": ".g-fourth",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 2,\n\n"stagger": 1.5,\n\n"ease": "power4.out"\n\n}'
+                }
+                data-anim-type={"from"}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.column__lr7Za)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__tuHb1)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column___1Ig7H)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column___6Sfj)}
+                />
+              </div>
             </div>
           </section>
           <div
@@ -488,7 +660,9 @@ function PlasmicGallery__RenderFunc(props) {
               className={classNames(projectcss.all, sty.columns__xuXx7)}
               data-anim={"true"}
               data-anim-props={
-                '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                hasVariant(globalVariants, "screen", "tablet")
+                  ? ``
+                  : '{\n\n"scrollTrigger": {\n\n"trigger": ".F-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"y": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
               }
               data-anim-type={"from"}
             >
@@ -934,6 +1108,14 @@ function PlasmicGallery__RenderFunc(props) {
               </div>
             </div>
           </div>
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              '<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>\r\n<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MorphSVGPlugin.min.js"></script>\r\n\r\n <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/DrawSVGPlugin.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>\r\n  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathPlugin.min.js">\r\n</script>\r\n\r\n <!-- Three.js + GLTFLoader (Global versions used for simple testing) -->\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>\r\n    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js" type="module"></script>\r\n    \r\n    <!-- We need to expose GLTFLoader to window for our script to pick it up if not bundled -->\r\n    <script type="module">\r\n        import { GLTFLoader } from \'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js\';\r\n        window.GLTFLoader = GLTFLoader;\r\n    </script>\r\n\r\n\r\n\r\n<script src="https://cdn.jsdelivr.net/npm/animotion-saply-plus@5.0.8/dist/animotion-saply.min.js"></script>'
+            }
+          />
         </div>
       </div>
     </React.Fragment>
@@ -949,36 +1131,71 @@ const PlasmicDescendants = {
     "pageWrapper2",
     "aboutUs2",
     "contentsAbout3",
+    "wrapper",
+    "wrapper2",
     "pageWrapper3",
     "aboutUs3",
     "contentsAbout4",
+    "wrapper3",
+    "wrapper4",
     "pageWrapper4",
     "aboutUs4",
     "contentsAbout5",
+    "wrapper5",
+    "wrapper6",
     "footer",
     "form",
     "formField",
     "input",
-    "button"
+    "button",
+    "embedHtml"
   ],
 
   nav: ["nav", "navBar", "heroBtn3"],
   navBar: ["navBar"],
   heroBtn3: ["heroBtn3"],
-  pageWrapper2: ["pageWrapper2", "aboutUs2", "contentsAbout3"],
+  pageWrapper2: [
+    "pageWrapper2",
+    "aboutUs2",
+    "contentsAbout3",
+    "wrapper",
+    "wrapper2"
+  ],
+
   aboutUs2: ["aboutUs2", "contentsAbout3"],
   contentsAbout3: ["contentsAbout3"],
-  pageWrapper3: ["pageWrapper3", "aboutUs3", "contentsAbout4"],
+  wrapper: ["wrapper"],
+  wrapper2: ["wrapper2"],
+  pageWrapper3: [
+    "pageWrapper3",
+    "aboutUs3",
+    "contentsAbout4",
+    "wrapper3",
+    "wrapper4"
+  ],
+
   aboutUs3: ["aboutUs3", "contentsAbout4"],
   contentsAbout4: ["contentsAbout4"],
-  pageWrapper4: ["pageWrapper4", "aboutUs4", "contentsAbout5"],
+  wrapper3: ["wrapper3"],
+  wrapper4: ["wrapper4"],
+  pageWrapper4: [
+    "pageWrapper4",
+    "aboutUs4",
+    "contentsAbout5",
+    "wrapper5",
+    "wrapper6"
+  ],
+
   aboutUs4: ["aboutUs4", "contentsAbout5"],
   contentsAbout5: ["contentsAbout5"],
+  wrapper5: ["wrapper5"],
+  wrapper6: ["wrapper6"],
   footer: ["footer", "form", "formField", "input", "button"],
   form: ["form", "formField", "input", "button"],
   formField: ["formField", "input"],
   input: ["input"],
-  button: ["button"]
+  button: ["button"],
+  embedHtml: ["embedHtml"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -1019,17 +1236,24 @@ export const PlasmicGallery = Object.assign(
     pageWrapper2: makeNodeComponent("pageWrapper2"),
     aboutUs2: makeNodeComponent("aboutUs2"),
     contentsAbout3: makeNodeComponent("contentsAbout3"),
+    wrapper: makeNodeComponent("wrapper"),
+    wrapper2: makeNodeComponent("wrapper2"),
     pageWrapper3: makeNodeComponent("pageWrapper3"),
     aboutUs3: makeNodeComponent("aboutUs3"),
     contentsAbout4: makeNodeComponent("contentsAbout4"),
+    wrapper3: makeNodeComponent("wrapper3"),
+    wrapper4: makeNodeComponent("wrapper4"),
     pageWrapper4: makeNodeComponent("pageWrapper4"),
     aboutUs4: makeNodeComponent("aboutUs4"),
     contentsAbout5: makeNodeComponent("contentsAbout5"),
+    wrapper5: makeNodeComponent("wrapper5"),
+    wrapper6: makeNodeComponent("wrapper6"),
     footer: makeNodeComponent("footer"),
     form: makeNodeComponent("form"),
     formField: makeNodeComponent("formField"),
     input: makeNodeComponent("input"),
     button: makeNodeComponent("button"),
+    embedHtml: makeNodeComponent("embedHtml"),
     // Metadata about props expected for PlasmicGallery
     internalVariantProps: PlasmicGallery__VariantProps,
     internalArgProps: PlasmicGallery__ArgProps,

@@ -1151,7 +1151,9 @@ function PlasmicHomepage__RenderFunc(props) {
                 className={classNames(projectcss.all, sty.contentsAbout3)}
                 data-anim={"true"}
                 data-anim-props={
-                  '{\n\n"scrollTrigger": {\n\n"trigger": ".after-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"x": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
+                  hasVariant(globalVariants, "screen", "mobile")
+                    ? ``
+                    : '{\n\n"scrollTrigger": {\n\n"trigger": ".after-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"x": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
                 }
                 data-anim-type={"from"}
               >
@@ -1436,9 +1438,7 @@ function PlasmicHomepage__RenderFunc(props) {
             <div
               className={classNames(projectcss.all, sty.freeBox__a62Is)}
               data-anim={"true"}
-              data-anim-props={
-                '{\n\n"scrollTrigger": {\n\n"trigger": ".E-scroll",\n\n"start": "top 80%",\n\n"end": "bottom 20%",\n\n"scrub": true,\n\n"toggleActions": "play none none reverse"\n\n},\n\n"x": -100,\n\n"opacity": 0,\n\n"duration": 1.5,\n\n"stagger": 0.5,\n\n"ease": "power4.out"\n\n}'
-              }
+              data-anim-props={``}
               data-anim-type={"from"}
             >
               <div className={classNames(projectcss.all, sty.freeBox__nmOo6)} />
